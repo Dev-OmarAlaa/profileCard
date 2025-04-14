@@ -1,0 +1,168 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 100%;
+    font-family: cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    background: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: radial-gradient(#444cf7 1.3px, #e5e5f7 1.3px);
+    background-size: 26px 26px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* باقي الكود الخاص بك يبقى زي ما هو، بس هعدّل وأضيف الجزء الخاص بالأيقونات */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    min-width: 35rem;
+    overflow: hidden;
+    background-color: white;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف للكارد لإضفاء عمق */
+}
+
+.top {
+    height: 10rem;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #e5e5f7 23px), repeating-linear-gradient(#444cf755, #444cf7);
+}
+
+.middle {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -6rem;
+}
+
+.pic {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 0.4rem solid white;
+}
+
+.title {
+    font-size: 2.2rem;
+}
+
+.profession {
+    font-size: 1.6rem;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 1.8rem 1.5rem;
+}
+
+.username {
+    font-size: 1.2rem;
+}
+
+/* حاوية الأيقونات */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    /* توزيع الأيقونات بمسافات متساوية */
+    align-items: center;
+    /* توسيط عمودي */
+    padding: 1.5rem 1rem;
+    /* هامش داخلي مريح */
+    gap: 15px;
+    /* مسافة بين الأيقونات لتبدو متباعدة بشكل أنيق */
+    background-color: #f8f9fa;
+    /* خلفية خفيفة لإبراز منطقة الأيقونات */
+    border-top: 1px solid #e0e0e0;
+    /* خط فاصل خفيف للتنظيم */
+}
+
+.icon {
+    width: 4rem;
+    /* زيادة طفيفة في الحجم لمظهر أوضح */
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* خلفية بيضاء للأيقونة */
+    border-radius: 50%;
+    /* شكل دائري للأيقونات */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* ظل خفيف للأيقونات */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* تأثيرات سلسة */
+}
+
+.icon img {
+    max-width: 60%;
+    /* تصغير الصورة قليلاً لتناسب الدائرة */
+    max-height: 60%;
+    object-fit: contain;
+    /* الحفاظ على نسب الصورة */
+}
+
+.icon:hover {
+    transform: translateY(-5px);
+    /* رفع الأيقونة قليلاً عند التمرير */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /* زيادة الظل عند التمرير */
+}
